@@ -9,9 +9,9 @@ This plugin allows you to quickly take notes from anywhere within Neovim. Whethe
 ### Lazy
 ```lua
 require("lazy").setup({
-	{
-		"tetsuya28/memo.nvim",
-	}
+  {
+    "tetsuya28/memo.nvim",
+  }
 })
 
 require("memo").setup({})
@@ -19,7 +19,7 @@ require("memo").setup({})
 
 ## Settings
 ### Default settings
-- Memo directory: `~/memos/**.md`
+- Memo directory: `~/memos/`
   - Planning to make this configurable in future releases.
 
 ## Usage
