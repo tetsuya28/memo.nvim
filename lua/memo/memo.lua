@@ -4,11 +4,8 @@ M.current_buf = nil
 M.current_win = nil
 
 function M.create_window(buf, title)
-	local width = 60
-	local height = 20
-
-	local col = math.floor((vim.o.columns - width) / 2)
-	local row = math.floor((vim.o.lines - height) / 2)
+	local col = math.floor((vim.o.columns - M.width) / 2)
+	local row = math.floor((vim.o.lines - M.height) / 2)
 
 	if not title then
 		title = "Memo"
@@ -17,8 +14,8 @@ function M.create_window(buf, title)
 	local win = vim.api.nvim_open_win(buf, true, {
 		relative = "editor",
 		title = title,
-		width = width,
-		height = height,
+		width = M.width,
+		height = M.height,
 		col = col,
 		row = row,
 		style = "minimal",

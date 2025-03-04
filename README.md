@@ -8,12 +8,15 @@ This plugin allows you to quickly take notes from anywhere within Neovim with **
 ### Lazy
 ```lua
 require("lazy").setup({
-  {
-    "tetsuya28/memo.nvim",
-  }
+	{
+		"tetsuya28/memo.nvim",
+	},
 })
 
-require("memo").setup({})
+require("memo").setup({
+	width = 150,
+	height = 50,
+})
 ```
 
 ## Settings
@@ -28,3 +31,9 @@ require("memo").setup({})
 
 - `:MemoOpen <title>` - Open memo with title
 ![](./docs/assets/open.png)
+
+## Options
+| Key | Description | Default |
+| --- | --- | --- |
+| width | Width of memo window | 150 |
+| height | Height of memo window | 50 |
