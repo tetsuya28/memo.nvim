@@ -23,6 +23,7 @@ require("memo").setup({})
   - Planning to make this configurable in future releases.
 
 ## Usage
-- `:MemoNew` - Open memo
+- `:MemoNew` - Open memo ( default title is current datetime )
   - `:MemoNew <title>` - Open memo with title
 - `:MemoOpen <title>` - Open memo with title
+![](./docs/images/open.png)
