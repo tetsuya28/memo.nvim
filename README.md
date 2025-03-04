@@ -1,5 +1,5 @@
 # memo.nvim
-This plugin allows you to quickly take notes from anywhere within Neovim. Whether you're coding, reading documentation, or browsing files, you can instantly capture your thoughts without disrupting your workflow. With simple keybindings, you can open a note-taking buffer, save your notes, and access them later - all without leaving your editor.
+This plugin allows you to quickly take notes from anywhere within Neovim with **floating window**.
 
 ![](./docs/images/note.png)
 
@@ -23,6 +23,7 @@ require("memo").setup({})
   - Planning to make this configurable in future releases.
 
 ## Usage
-- `:MemoNew` - Open memo
+- `:MemoNew` - Open memo ( default title is current datetime )
   - `:MemoNew <title>` - Open memo with title
 - `:MemoOpen <title>` - Open memo with title
+![](./docs/images/open.png)
