@@ -1,8 +1,7 @@
 # memo.nvim
 This plugin allows you to quickly take notes from anywhere within Neovim with **floating window**.
 
-![](./docs/images/note.png)
-
+![](./docs/assets/intro.gif)
 
 ## Installation
 
@@ -25,5 +24,7 @@ require("memo").setup({})
 ## Usage
 - `:MemoNew` - Open memo ( default title is current datetime )
   - `:MemoNew <title>` - Open memo with title
+![](./docs/assets/new.png)
+
 - `:MemoOpen <title>` - Open memo with title
-![](./docs/images/open.png)
+![](./docs/assets/open.png)
