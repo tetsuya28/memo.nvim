@@ -20,10 +20,12 @@ require("memo").setup({
 })
 ```
 
-## Settings
-### Default settings
-- Memo directory: `~/memos/`
-  - Planning to make this configurable in future releases.
+## Options
+| Key | Description | Default |
+| --- | --- | --- |
+| save_dir | Directory to save memo files | `$HOME/memos` |
+| width | Width of memo window | 150 |
+| height | Height of memo window | 50 |
 
 ## Usage
 - `:MemoNew` - Open memo ( default title is current datetime )
@@ -32,10 +34,3 @@ require("memo").setup({
 
 - `:MemoOpen <title>` - Open memo with title
 ![](./docs/assets/open.png)
-
-## Options
-| Key | Description | Default |
-| --- | --- | --- |
-| save_dir | Directory to save memo files | $HOME/memos |
-| width | Width of memo window | 150 |
-| height | Height of memo window | 50 |
